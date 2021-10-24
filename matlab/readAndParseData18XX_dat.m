@@ -176,8 +176,8 @@ function [dataOk, frameNumber, detObj] = readAndParseData18XX(DATA_sphandle, Con
                     QQ=QQ(:,1:end);
                     detObj.QQ=fliplr(QQ);
 %                     detObj.ele = 
-                    detObj.theta = asind((-NUM_ANGLE_BINS/2+0.5 : NUM_ANGLE_BINS/2-0.5)'*(2/NUM_ANGLE_BINS));
-                    detObj.range = (0:ConfigParameters.numRangeBins-1) * ConfigParameters.rangeIdxToMeters;
+%                     detObj.theta = asind((-NUM_ANGLE_BINS/2+0.5 : NUM_ANGLE_BINS/2-0.5)'*(2/NUM_ANGLE_BINS));
+%                     detObj.range = (0:ConfigParameters.numRangeBins-1) * ConfigParameters.rangeIdxToMeters;
                     dataOk = 1;
                     
                 case MMWDEMO_UART_MSG_RANGE_DOPPLER_HEATMAP
